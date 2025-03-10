@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        
+        <!--daisy ui cdn-->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        
+        <!--font awsome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!--font family-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <!--tailwind css cdn-->
+        <script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    clifford: '#da373d',
+                    'border-praimary': 'rgba(55, 82, 253, 0.2)',
+                    'bg-primary':'#F4F7FF',
+                    'btn-primary':'#3752FD',
+                    
+                    
+                }
+            }
+        }
+    }
+</script>
+
+<style>
+    .poppins-font {
+            font-family:"Poppins", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+   
+</style>
+</head>
+
+
+  <body class="poppins-font px-[10px] bg-bg-primary py-[30px]">
+    
+    <section class="w-[1540px] mx-auto">
+      <!--nav bar-->
+      <div class="navbar items-center p-[25px] bg-[#FFFFFF] rounded-[16px] mb-[20px]">
+          <div class="flex-1 flex gap-4 items-center">
+              <img src="imgs/logo.png" alt="">
+              <h2 class="text-4xl font-light">Dev<span class="font-bold text-4xl">Board</span></h2>
+            
+          </div>
+          <div class="flex justify-between gap-8 items-center">
+            
+              <div class=" flex gap-4 items-center bg-bg-primary p-[16px] rounded-[32px]">
+                <img src="imgs/checkbox.png" alt="">
+                <p class="font-bold text-3xl">23</p>
+              </div>
+              
+            
+            <div class="bg-bg-primary p-[10px] rounded-full">
+              <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar ">
+                <div class="w-10 rounded-full ">
+                  <img
+                    alt="Tailwind CSS Navbar component"
+                    src="imgs/theme-btn.png" />
+                </div>
+              </div>
+              
+            </div>
+          </div>
+      </div>
+      <section class="grid grid-cols-8 gap-6">
+          <main class="bg-[#FFFFFF] py-[25px] rounded-[16px] col-span-6">
+          <!--head section-->
+          <section class="grid grid-cols-4 gap-6 mb-[30px] mx-[30px]">
+
+            <!--task section-->
+            <div class="flex justify-between bg-bg-primary items-center p-[20px] rounded-[12px]">
+              <div class="bg-[#FFFFFF] rounded-[50%] p-[20px] mr-[10px]">
+                <img src="imgs/checkbox.png" alt="">
+              </div>
+              <div>
+                <p class="text-[#00303C] font-light text-base">Task Assigned</p>
+                <h2 class="text-[#00303C] font-bold text-4xl">05</h2>
+              </div>
+            </div>
+            <!--discover section-->
+            <button class="bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] flex gap-2 items-center py-[20px] px-[40px] rounded-[12px] col-span-2">
+              <div>
+                <img src="imgs/board.png" alt="">
+                
+              </div>  
+                <p class="text-[#FFFFFF] font-medium text-lg ">Discover Something<br>New Today!</p>
+            </button>
+            <!--wed section-->
+
+            <div class="flex justify-between bg-bg-primary px-[20px] py-[30px] rounded-[16px]">
+              <div class="rounded-[50%] bg-[#FFFFFF] p-[18px]">
+                <img src="imgs/calender.png" alt="">
+              </div>
+              <div>
+                <p class="font-normal text-lg text-[#00303C]">Wed ,</p>
+                <h3 class="font-bold text-[#00303C] text-lg">Jul 28 2025</h3>
+              </div>
+            </div>
+
+          </section>
+          <div class="border-b-border-praimary border-dashed border-b-[1px] mb-[30px]"></div>
+          <!--card section-->
+          
+            <section class="mx-[30px] grid grid-cols-3 gap-8">
+              <!--card 1-->
+              <div class="card bg-bg-primary  ">
+                <div class="card-body">
+                  <p class=" mb-[16px]"><span class="px-[16px] bg-[#FFFFFF] py-[6px] font-normal text-base rounded-[8px]">ShopEase</span></p>
+                  <h2 class="card-title font-medium text-2xl text-[#00303C] mb-[16px]">Fix Mobile Button Issue </h2>
+                  <p class="font-light text-base text-[#0000000] h-[90px] bg-[#FFFFFF] p-[16px] rounded-[8px] mb-[16px] overflow-hidden truncate">Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works properly
+                    and ensure onClick works properly</p>
+                    <div class="border-dashed border-b-border-praimary border-b-[1px]"></div>
+                    <div class="flex justify-between items-center">
+                      <div>
+                        <p class="text-[#00303C] font-light text-base">Deadline</p>
+                        <p class="font-medium text-base tracking-[3%]">21 March 2025</p>
+                      </div>
+                      <div class="card-actions ">
+                        <button class="bg-btn-primary rounded-[8px] text-[#FFFFFF] px-[20px] py-[10px]">Completed</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <!--card 2-->
+              <div class="card bg-bg-primary  ">
+                <div class="card-body">
+                  <p class=" mb-[16px]"><span class="px-[16px] bg-[#FFFFFF] py-[6px] font-normal text-base rounded-[8px]">CloudSync</span></p>
+                  <h2 class="card-title font-medium text-2xl text-[#00303C] mb-[16px]">Add Dark Mode </h2>
+                  <p class="font-light text-base text-[#0000000] h-[90px] bg-[#FFFFFF] p-[16px] rounded-[8px] mb-[16px] overflow-hidden truncate">Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works properly
+                    and ensure onClick works properly</p>
+                    <div class="border-dashed border-b-border-praimary border-b-[1px]"></div>
+                    <div class="flex justify-between items-center">
+                      <div>
+                        <p class="text-[#00303C] font-light text-base">Deadline</p>
+                        <p class="font-medium text-base tracking-[3%]">21 March 2025</p>
+                      </div>
+                      <div class="card-actions ">
+                        <button class="bg-btn-primary rounded-[8px] text-[#FFFFFF] px-[20px] py-[10px]">Completed</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <!--card 3-->
+              <div class="card bg-bg-primary  ">
+                <div class="card-body">
+                  <p class=" mb-[16px]"><span class="px-[16px] bg-[#FFFFFF] py-[6px] font-normal text-base rounded-[8px]">SwiftPay</span></p>
+                  <h2 class="card-title font-medium text-2xl text-[#00303C] mb-[16px]">Optimize  Home page</h2>
+                  <p class="font-light text-base text-[#0000000] h-[90px] bg-[#FFFFFF] p-[16px] rounded-[8px] mb-[16px] overflow-hidden truncate">Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works properly
+                    and ensure onClick works properly</p>
+                    <div class="border-dashed border-b-border-praimary border-b-[1px]"></div>
+                    <div class="flex justify-between items-center">
+                      <div>
+                        <p class="text-[#00303C] font-light text-base">Deadline</p>
+                        <p class="font-medium text-base tracking-[3%]">21 March 2025</p>
+                      </div>
+                      <div class="card-actions ">
+                        <button class="bg-btn-primary rounded-[8px] text-[#FFFFFF] px-[20px] py-[10px]">Completed</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <!--card 4-->
+              <div class="card bg-bg-primary  ">
+                <div class="card-body">
+                  <p class=" mb-[16px]"><span class="px-[16px] bg-[#FFFFFF] py-[6px] font-normal text-base rounded-[8px]">Meta</span></p>
+                  <h2 class="card-title font-medium text-2xl text-[#00303C] mb-[16px]">Add new emoji 🤲 </h2>
+                  <p class="font-light text-base text-[#0000000] h-[90px] bg-[#FFFFFF] p-[16px] rounded-[8px] mb-[16px] overflow-hidden truncate">Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works properly
+                    and ensure onClick works properly</p>
+                    <div class="border-dashed border-b-border-praimary border-b-[1px]"></div>
+                    <div class="flex justify-between items-center">
+                      <div>
+                        <p class="text-[#00303C] font-light text-base">Deadline</p>
+                        <p class="font-medium text-base tracking-[3%]">21 March 2025</p>
+                      </div>
+                      <div class="card-actions ">
+                        <button class="bg-btn-primary rounded-[8px] text-[#FFFFFF] px-[20px] py-[10px]">Completed</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <!--card 5-->
+              <div class="card bg-bg-primary  ">
+                <div class="card-body">
+                  <p class=" mb-[16px]"><span class="px-[16px] bg-[#FFFFFF] py-[6px] font-normal text-base rounded-[8px]">Google LLC</span></p>
+                  <h2 class="card-title font-medium text-2xl text-[#00303C] mb-[16px]">Integrate OpenAI API  </h2>
+                  <p class="font-light text-base text-[#0000000] h-[90px] bg-[#FFFFFF] p-[16px] rounded-[8px] mb-[16px] overflow-hidden truncate">Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works properly
+                    and ensure onClick works properly</p>
+                    <div class="border-dashed border-b-border-praimary border-b-[1px]"></div>
+                    <div class="flex justify-between items-center">
+                      <div>
+                        <p class="text-[#00303C] font-light text-base">Deadline</p>
+                        <p class="font-medium text-base tracking-[3%]">21 March 2025</p>
+                      </div>
+                      <div class="card-actions ">
+                        <button class="bg-btn-primary rounded-[8px] text-[#FFFFFF] px-[20px] py-[10px]">Completed</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <!--card 6-->
+              <div class="card bg-bg-primary  ">
+                <div class="card-body">
+                  <p class=" mb-[16px]"><span class="px-[16px] bg-[#FFFFFF] py-[6px] font-normal text-base rounded-[8px]">Glassdoar</span></p>
+                  <h2 class="card-title font-medium text-2xl text-[#00303C] mb-[16px]">Improve Job searching </h2>
+                  <p class="font-light text-base text-[#0000000] h-[90px] bg-[#FFFFFF] p-[16px] rounded-[8px] mb-[16px] overflow-hidden truncate">Debug using Chrome <br> DevTools, check for overlapping elements, and ensure onClick works properly
+                    and ensure onClick works properly</p>
+                    <div class="border-dashed border-b-border-praimary border-b-[1px]"></div>
+                    <div class="flex justify-between items-center">
+                      <div>
+                        <p class="text-[#00303C] font-light text-base">Deadline</p>
+                        <p class="font-medium text-base tracking-[3%]">21 March 2025</p>
+                      </div>
+                      <div class="card-actions ">
+                        <button class="bg-btn-primary rounded-[8px] text-[#FFFFFF] px-[20px] py-[10px]">Completed</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </main>
+        <!--activity log section-->
+        <main class="col-span-2 bg-[#FFFFFF] p-[25px] rounded-[16px] ">
+          <!--activity and clear section-->
+          <div >
+            <div class="flex gap-4 items-center mb-[15px] justify-center">
+              <img class="text-[#00303C]" src="imgs/activity.png" alt="">
+              <p class="text-[#00303C] font-medium text-lg">Activity Log</p>
+            </div>
+            <div class="text-center">
+              <button class="bg-btn-primary rounded-[8px] text-[#FFFFFF] px-[20px] py-[10px] font-medium text-base mb-[15px]">Clear History</button>
+            </div>
+          </div>
+          <!--margin-->
+          <div class="border-b-border-praimary border-dashed border-b-[1px] mb-[30px] -mx-[25px]"></div>
+          <!--msg section-->
+          <div class=" grid gap-y-[10px]">
+            <!--msg 1-->
+            <div class="bg-bg-primary p-[10px] rounded-[8px]">
+              <p class="font-normal text-base text-[#000000]">You have Complete The Task Fix Mobile Button Issue  at <span id="time"> </span></p>
+            </div>
+            <!--msg 2-->
+            <div class="bg-bg-primary p-[10px] rounded-[8px]">
+              <p class="font-normal text-base text-[#000000]">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+            </div>
+            <!--msg 3-->
+            <div class="bg-bg-primary p-[10px] rounded-[8px]">
+              <p class="font-normal text-base text-[#000000]">You have Complete The Task Optimize  Home page at 12:48:15 PM</p>
+            </div>
+            <!--msg 4-->
+            <div class="bg-bg-primary p-[10px] rounded-[8px]">
+              <p class="font-normal text-base text-[#000000]">You have Complete The Task Add new emoji 🤲 at 12:48:15 PM</p>
+            </div>
+            <!--msg 5-->
+            <div class="bg-bg-primary p-[10px] rounded-[8px]">
+              <p class="font-normal text-base text-[#000000]">You have Complete The Task Integrate OpenAI API  at 12:48:15 PM</p>
+            </div>
+            <!--msg 6-->
+            <div class="bg-bg-primary p-[10px] rounded-[8px]">
+              <p class="font-normal text-base text-[#000000]">You have Complete The Task Improve Job searching  at 12:48:15 PM</p>
+            </div>
+          </div>
+        </main>
+      </section>
+    </section>
+  </body>
+  <script>
+   
+  </script>
+</html>
