@@ -256,7 +256,7 @@
             </div>
             <!--msg 2-->
             <div class="bg-bg-primary p-[10px] rounded-[8px]">
-              <p class="font-normal text-base text-[#000000]">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+              <p class="font-normal text-base text-[#000000]">You have Complete The Task Add Dark Mode at <span id="time"> </span></p>
             </div>
             <!--msg 3-->
             <div class="bg-bg-primary p-[10px] rounded-[8px]">
@@ -278,37 +278,35 @@
         </main>
       </section>
     </section>
+
+    <!--js cdn-->
+    <script src="./js/date.js"></script>
   </body>
   <script>
-   function updateTime() {
-      const currentTime = new Date();
-      
-      let fullTime = currentTime.toLocaleTimeString().toString().padStart(2, '0');
-      let date = currentTime.toLocaleDateString().toString();
-
-      
-      const timeString = `${fullTime}`;
-      
-      document.getElementById('time').innerText = timeString;
-    }
-
-    // Update time every second
-    setInterval(updateTime, 1000);
+   
     
     
-    window.onload = updateTime;
-    function updateDay(){
-      let currentDay = new Date();
-      let years = currentDay.toLocaleString('default',{year:"numeric"}).toString();
-      let months = currentDay.toLocaleString('default',{month:"short"}).toString();
-      let date = currentDay.toLocaleString('default', {day:"numeric"}).toString();
+    function updateDate(){
+      let currentDate = new Date();
+      let years = currentDate.toLocaleString('default',{year:"numeric"}).toString();
+      let months = currentDate.toLocaleString('default',{month:"short"}).toString();
+      let date = currentDate.toLocaleString('default', {day:"numeric"}).toString();
       
       const dateSring =`${months}:${date}:${years}`;
       document.getElementById('date').innerText= dateSring;
       
     }
+    setInterval(updateDate, 1000);
+    
+    function updateDay(){
+      let currentDay = new Date();
+      let day = currentDay.toLocaleString('default',{weekday:"short"}).toString();
+      let symble = ',';
+      
+      const dayString = `${day} ${symble}`;
+      document.getElementById('day').innerText = dayString;
+    }
     setInterval(updateDay, 1000);
-
     
   </script>
 </html>
