@@ -1,3 +1,14 @@
+function updateDay(){
+    let currentDay = new Date();
+    let day = currentDay.toLocaleString('default',{weekday:"short"}).toString();
+    let symble = ',';
+    
+    const dayString = `${day} ${symble}`;
+    document.getElementById('day').innerText = dayString;
+  }
+  setInterval(updateDay, 1000);
+
+
 function updateTime() {
     const currentTime = new Date();
     
