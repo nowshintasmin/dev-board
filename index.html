@@ -108,8 +108,8 @@
                 <img src="imgs/calender.png" alt="">
               </div>
               <div>
-                <p class="font-normal text-lg text-[#00303C]">Wed ,</p>
-                <h3 class="font-bold text-[#00303C] text-lg">Jul 28 2025</h3>
+                <p class="font-normal text-lg text-[#00303C]" id="day"></p>
+                <h3 class="font-bold text-[#00303C] text-lg" id="date"></h3>
               </div>
             </div>
 
@@ -280,6 +280,35 @@
     </section>
   </body>
   <script>
-   
+   function updateTime() {
+      const currentTime = new Date();
+      
+      let fullTime = currentTime.toLocaleTimeString().toString().padStart(2, '0');
+      let date = currentTime.toLocaleDateString().toString();
+
+      
+      const timeString = `${fullTime}`;
+      
+      document.getElementById('time').innerText = timeString;
+    }
+
+    // Update time every second
+    setInterval(updateTime, 1000);
+    
+    
+    window.onload = updateTime;
+    function updateDay(){
+      let currentDay = new Date();
+      let years = currentDay.toLocaleString('default',{year:"numeric"}).toString();
+      let months = currentDay.toLocaleString('default',{month:"short"}).toString();
+      let date = currentDay.toLocaleString('default', {day:"numeric"}).toString();
+      
+      const dateSring =`${months}:${date}:${years}`;
+      document.getElementById('date').innerText= dateSring;
+      
+    }
+    setInterval(updateDay, 1000);
+
+    
   </script>
 </html>
