@@ -9,18 +9,19 @@ function updateDay(){
   setInterval(updateDay, 1000);
 
 
-function updateTime() {
-    const currentTime = new Date();
+  function updateDate(){
+    let currentDate = new Date();
+    let years = currentDate.toLocaleString('default',{year:"numeric"}).toString();
+    let months = currentDate.toLocaleString('default',{month:"short"}).toString();
+    let date = currentDate.toLocaleString('default', {day:"numeric"}).toString();
     
-    let fullTime = currentTime.toLocaleTimeString().toString().padStart(2, '0');
-    let date = currentTime.toLocaleDateString().toString();
-
+    const dateSring =`${months}:${date}:${years}`;
+    document.getElementById('date').innerText= dateSring;
     
-    const timeString = `${fullTime}`;
-    
-    document.getElementById('time').innerText = timeString;
   }
+  setInterval(updateDate, 1000);
 
-  // Update time every second
-  setInterval(updateTime, 1000);
+
+
+
   

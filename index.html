@@ -62,7 +62,7 @@
             
               <div class=" flex gap-4 items-center bg-bg-primary p-[16px] rounded-[32px]">
                 <img src="imgs/checkbox.png" alt="">
-                <p class="font-bold text-3xl">23</p>
+                <p class="font-bold text-3xl" id="num">23</p>
               </div>
               
             
@@ -92,7 +92,7 @@
               </div>
               <div>
                 <p class="text-[#00303C] font-light text-base">Task Assigned</p>
-                <h2 class="text-[#00303C] font-bold text-4xl">05</h2>
+                <h2 class="text-[#00303C] font-bold text-4xl" >0<span id="task">6</span></h2>
               </div>
             </div>
             <!--discover section-->
@@ -134,7 +134,7 @@
                         <p class="font-medium text-base tracking-[3%]">21 March 2025</p>
                       </div>
                       <div class="card-actions ">
-                        <button class="bg-btn-primary rounded-[8px] text-[#FFFFFF] px-[20px] py-[10px]">Completed</button>
+                        <button class="bg-btn-primary rounded-[8px] text-[#FFFFFF] px-[20px] py-[10px] disabled:bg-[#BCC5FF]" id="ShopEase">Completed</button>
                       </div>
                   </div>
                 </div>
@@ -153,7 +153,7 @@
                         <p class="font-medium text-base tracking-[3%]">21 March 2025</p>
                       </div>
                       <div class="card-actions ">
-                        <button class="bg-btn-primary rounded-[8px] text-[#FFFFFF] px-[20px] py-[10px]">Completed</button>
+                        <button class="bg-btn-primary rounded-[8px] text-[#FFFFFF] px-[20px] py-[10px] disabled:bg-[#BCC5FF]" id="CloudSync">Completed</button>
                       </div>
                   </div>
                 </div>
@@ -172,7 +172,7 @@
                         <p class="font-medium text-base tracking-[3%]">21 March 2025</p>
                       </div>
                       <div class="card-actions ">
-                        <button class="bg-btn-primary rounded-[8px] text-[#FFFFFF] px-[20px] py-[10px]">Completed</button>
+                        <button class="bg-btn-primary rounded-[8px] text-[#FFFFFF] px-[20px] py-[10px] disabled:bg-[#BCC5FF]" id="SwiftPay">Completed</button>
                       </div>
                   </div>
                 </div>
@@ -191,7 +191,7 @@
                         <p class="font-medium text-base tracking-[3%]">21 March 2025</p>
                       </div>
                       <div class="card-actions ">
-                        <button class="bg-btn-primary rounded-[8px] text-[#FFFFFF] px-[20px] py-[10px]">Completed</button>
+                        <button class="bg-btn-primary rounded-[8px] text-[#FFFFFF] px-[20px] py-[10px] disabled:bg-[#BCC5FF]" id="Meta">Completed</button>
                       </div>
                   </div>
                 </div>
@@ -210,7 +210,7 @@
                         <p class="font-medium text-base tracking-[3%]">21 March 2025</p>
                       </div>
                       <div class="card-actions ">
-                        <button class="bg-btn-primary rounded-[8px] text-[#FFFFFF] px-[20px] py-[10px]">Completed</button>
+                        <button class="bg-btn-primary rounded-[8px] text-[#FFFFFF] px-[20px] py-[10px] disabled:bg-[#BCC5FF]" id="Google-LLC">Completed</button>
                       </div>
                   </div>
                 </div>
@@ -229,7 +229,7 @@
                         <p class="font-medium text-base tracking-[3%]">21 March 2025</p>
                       </div>
                       <div class="card-actions ">
-                        <button class="bg-btn-primary rounded-[8px] text-[#FFFFFF] px-[20px] py-[10px]">Completed</button>
+                        <button class="bg-btn-primary rounded-[8px] text-[#FFFFFF] px-[20px] py-[10px] disabled:bg-[#BCC5FF]" id="Glassdoar">Completed</button>
                       </div>
                   </div>
                 </div>
@@ -245,37 +245,14 @@
               <p class="text-[#00303C] font-medium text-lg">Activity Log</p>
             </div>
             <div class="text-center">
-              <button class="bg-btn-primary rounded-[8px] text-[#FFFFFF] px-[20px] py-[10px] font-medium text-base mb-[15px]">Clear History</button>
+              <button class="bg-btn-primary rounded-[8px] text-[#FFFFFF] px-[20px] py-[10px] font-medium text-base mb-[15px]" id="clr-btn">Clear History</button>
             </div>
           </div>
           <!--margin-->
           <div class="border-b-border-praimary border-dashed border-b-[1px] mb-[30px] -mx-[25px]"></div>
           <!--msg section-->
-          <div class=" grid gap-y-[10px]">
-            <!--msg 1-->
-            <div class="bg-bg-primary p-[10px] rounded-[8px]">
-              <p class="font-normal text-base text-[#000000]">You have Complete The Task Fix Mobile Button Issue  at <span id="time"> </span></p>
-            </div>
-            <!--msg 2-->
-            <div class="bg-bg-primary p-[10px] rounded-[8px]">
-              <p class="font-normal text-base text-[#000000]">You have Complete The Task Add Dark Mode at <span id="time"> </span></p>
-            </div>
-            <!--msg 3-->
-            <div class="bg-bg-primary p-[10px] rounded-[8px]">
-              <p class="font-normal text-base text-[#000000]">You have Complete The Task Optimize  Home page at 12:48:15 PM</p>
-            </div>
-            <!--msg 4-->
-            <div class="bg-bg-primary p-[10px] rounded-[8px]">
-              <p class="font-normal text-base text-[#000000]">You have Complete The Task Add new emoji 🤲 at 12:48:15 PM</p>
-            </div>
-            <!--msg 5-->
-            <div class="bg-bg-primary p-[10px] rounded-[8px]">
-              <p class="font-normal text-base text-[#000000]">You have Complete The Task Integrate OpenAI API  at 12:48:15 PM</p>
-            </div>
-            <!--msg 6-->
-            <div class="bg-bg-primary p-[10px] rounded-[8px]">
-              <p class="font-normal text-base text-[#000000]">You have Complete The Task Improve Job searching  at 12:48:15 PM</p>
-            </div>
+          <div class=" grid gap-y-[10px]" id="msg">
+            
           </div>
         </main>
       </section>

@@ -1,12 +1,15 @@
-function updateDate(){
-    let currentDate = new Date();
-    let years = currentDate.toLocaleString('default',{year:"numeric"}).toString();
-    let months = currentDate.toLocaleString('default',{month:"short"}).toString();
-    let date = currentDate.toLocaleString('default', {day:"numeric"}).toString();
-    
-    const dateSring =`${months}:${date}:${years}`;
-    document.getElementById('date').innerText= dateSring;
-    
-  }
-  setInterval(updateDate, 1000);
+function updateTime() {
+  const currentTime = new Date();
+  
+  let fullTime = currentTime.toLocaleTimeString().toString().padStart(2, '0');
+  
+
+  
+  const timeString = `${fullTime}`;
+  
+  document.getElementById('time').innerText = timeString;
+}
+
+// Update time every second
+setInterval(updateTime, 1000);
   
