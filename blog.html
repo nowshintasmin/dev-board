@@ -50,11 +50,11 @@ tailwind.config = {
     <div class="navbar items-center p-[25px] bg-[#FFFFFF] rounded-[16px] mb-[20px] flex justify-between drop-shadow-md">
         <div class=" flex gap-4 items-center">
             <img src="imgs/logo.png" alt="">
-            <h2 class="text-4xl font-light">Dev<span class="font-bold text-4xl">Board</span></h2>  
+            <h2 class="text-3xl font-light">Dev<span class="font-bold text-3xl">Board</span></h2>  
         </div>
 
         <div class="bg-btn-primary px-[20px] py-[10px] rounded-[8px]">
-          <button class="font-bold text-xl text-[#FFFFFF]">Back to Desk</button>
+          <button class="font-bold text-xl text-[#FFFFFF]" id="back-btn">Back to Desk</button>
         </div>
       
             
@@ -64,11 +64,53 @@ tailwind.config = {
 
     <!--main section-->
     <main>
-      <div>
-        
+      <div class="grid gap-4">
+        <h2 class="font-bold text-4xl text-[#00303C] my-[20px] text-center">Blogs</h2>
+        <!--Q 1-->
+        <div class="bg-[#FFFFFF] p-[15px] rounded-[8px]">
+          <h2 class="font-bold text-2xl text-[#00303C] mb-[10px] ">Question-1: What are the different ways to select an element in the DOM?</h2>
+          <div class="border-b-border-praimary border-dashed border-b-[1px] mb-[30px] -mx-[15px]"></div>
+          <p class="font-medium text-xl"> 1.getElementById(). 2.getElementsByClassName(). 3.getElementsByTagName(). 4.querySelectorAll(). 5.querySelector().
+          </p>
+        </div>
+
+        <!--Q 2-->
+        <div class="bg-[#FFFFFF] p-[15px] rounded-[8px]">
+          <h2 class="font-bold text-2xl text-[#00303C] mb-[10px] ">Question-2: What is the difference between innerHTML, innerText, and textContent ?
+          </h2>
+          <div class="border-b-border-praimary border-dashed border-b-[1px] mb-[30px] -mx-[15px]"></div>
+          <p class="font-medium text-xl">innerHTML: Sets the HTML content inside an element. <br>
+            innerText : sets the text content inside an element. <br>
+            textContent : sets the text content content inside an element.
+
+          </p>
+        </div>
+        <!--Q 3-->
+        <div class="bg-[#FFFFFF] p-[15px] rounded-[8px]">
+          <h2 class="font-bold text-2xl text-[#00303C] mb-[10px] ">Question-3: What is event delegation in the DOM?</h2>
+          <div class="border-b-border-praimary border-dashed border-b-[1px] mb-[30px] -mx-[15px]"></div>
+          <p class="font-medium text-xl">Event delegation is a technique in JavaScript used to handle events efficiently by taking advantage of the event bubbling mechanism.</p>
+        </div>
+        <!--Q 4-->
+        <div class="bg-[#FFFFFF] p-[15px] rounded-[8px]">
+          <h2 class="font-bold text-2xl text-[#00303C] mb-[10px] ">Question-4: What is event bubbling in the DOM?
+          </h2>
+          <div class="border-b-border-praimary border-dashed border-b-[1px] mb-[30px] -mx-[15px]"></div>
+          <p class="font-medium text-xl">Event bubbling is a concept in the DOM where an event that is triggered on an element bubbles up from the target element to its ancestors in the DOM hierarchy. </p>
+        </div>
+        <!--Q 5-->
+        <div class="bg-[#FFFFFF] p-[15px] rounded-[8px]">
+          <h2 class="font-bold text-2xl text-[#00303C] mb-[10px] ">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
+          <div class="border-b-border-praimary border-dashed border-b-[1px] mb-[30px] -mx-[15px]"></div>
+          <p class="font-medium text-xl">1.createElement(). 3.append(). 4.remove().</p>
+        </div>
+        <!--Q 6-->
+
+        <!--Q 7-->
       </div>
     </main>
   </section>
   
+  <script src="./js/inx.js"></script>
 </body>
 </html>
