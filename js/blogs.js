@@ -1,5 +1,5 @@
-let button = document.getElementById('discover-btn');
+let btn = document.getElementById('discover-btn');
 
-button.addEventListener('click',() =>{
+btn.addEventListener('click',() =>{
     window.location.href="./blog.html"
 });
